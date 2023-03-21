@@ -21,9 +21,11 @@ struct CartView: View {
                     Spacer()
                     Text("$\(cartManager.total).00")
                         .bold()
-                        
                 }
                 .padding()
+                
+                PaymentButton(action: {})
+                    .padding()
             } else {
                 Text("Your cart is empty")
             }
